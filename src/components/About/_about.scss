@@ -1,0 +1,40 @@
+.about {
+  background-color: $primary-normal;
+  overflow: hidden;
+}
+
+.aboutContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 34px 14px 64px 14px;
+
+  img {
+    max-width: 570px;
+  }
+}
+
+.aboutContent div{
+  flex: 1;
+}
+
+.aboutDescription{
+  h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+  }
+
+  p{
+    margin-bottom: 14px;
+    line-height: 150%;
+  }
+}
+
+
+@media screen and (max-width: 768px){
+  .aboutContent{
+    flex-direction: column;
+    text-align: center;
+  }
+}

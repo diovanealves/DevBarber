@@ -1,0 +1,62 @@
+main {
+  width: 100%;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  color: $white-normal;
+
+  h1{
+    text-align: center;
+    line-height: 150%;
+    max-width: 940px;
+    font-size: 46px;
+  }
+
+  p {
+    text-align: center;
+    margin: 14px 0;
+  }
+}
+
+.buttonContact {
+  background-color: $red-normal;
+  color: $white-normal;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 14px 28px;
+  margin: 14px 0;
+  border: 0;
+}
+
+.buttonContact:hover {
+  animation: scaleButton 0.8s alternate infinite;
+}
+
+@keyframes scaleButton {
+ from {
+  transform: scale(1);
+ } to {
+  transform: scale(1.09);
+ }
+}
+
+@media screen and (max-width: 768px){
+  .hero{
+    min-height: 60vh;
+
+    h1{
+      font-size: 28px;
+      width: 100%;
+    }
+
+    p{
+      font-size: 15px;
+    }
+  }
+}
