@@ -1,0 +1,34 @@
+.location {
+  background-color: $white-normal;
+  color: $black-normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h2 {
+    text-transform: uppercase;
+    font-size: 28px;
+  }
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: $white-normal;
+  gap: 22x;
+  padding: 48px 0;
+}
+
+.footerIcons {
+  display: flex;
+  gap: 10px;
+}
+
+.footerIcons a{
+  color: $white-normal;
+  font-size: 32px;
+}

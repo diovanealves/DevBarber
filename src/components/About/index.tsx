@@ -4,14 +4,18 @@ export default function About() {
   return (
     <section className="about">
       <div className="container aboutContent">
-        <div>
+        <div data-aos="zoom-in" data-aos-delay="100">
           <img
             src={Images}
             alt="Imagens mostrando alguns de nossos cortes de cabelo"
           />
         </div>
 
-        <div className="aboutDescription">
+        <div
+          className="aboutDescription"
+          data-aos="zoom-out-left"
+          data-aos-delay="250"
+        >
           <h2>Sobre</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur. Ornare eget pellentesque

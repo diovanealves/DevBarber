@@ -1,0 +1,43 @@
+.btnWhatsapp{
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  z-index: 99;
+
+  img {
+    max-width: 74px;
+    transition: transform 0.4s;
+  }
+
+  img:hover {
+    transform: scale(1.1);
+  }
+}
+
+.btnWhatsapp .tooltipText{
+  visibility: hidden;
+  position: absolute;
+  width: 120px;
+  top: 8;
+  left: -144px;
+  padding: 4px;
+  border-radius: 8px;
+  text-align: center;
+  background-color: $black-normal;
+  color: $white-normal;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.btnWhatsapp:hover .tooltipText{
+  visibility: visible;
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+.btnWhatsapp{
+  img {
+    max-width: 58px;
+  }
+}
+}
